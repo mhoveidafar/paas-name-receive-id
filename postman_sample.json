@@ -1,0 +1,16 @@
+curl --location --request POST 'http://localhost:8080/tasks/john' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"descrption": "This is a dude"
+}'
+
+
+HTTP:
+POST /tasks/john HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 40
+
+{
+"descrption": "This is a dude"
+}
